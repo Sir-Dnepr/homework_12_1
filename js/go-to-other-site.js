@@ -5,7 +5,7 @@ const goToNewSiteByUrlBtn = document.getElementById('go-to-site-by-url-btn');
 let url = null;
 
 addSiteToUrlBtn.addEventListener('click', () => {
-    let urlInput = prompt('Add your url address')?.trim();
+    const urlInput = prompt('Add your url address')?.trim();
 
     if (!urlInput) {
         alert('No Martini, no party.')
